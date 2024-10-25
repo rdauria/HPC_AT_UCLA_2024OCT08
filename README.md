@@ -9,3 +9,6 @@ https://nbviewer.org/github/rdauria/HPC_AT_UCLA_2024OCT08/blob/master/INTRO_TO_H
 
 https://nbviewer.org/format/slides/github/rdauria/HPC_AT_UCLA_2024OCT08/blob/master/INTRO_TO_H2C.ipynb#/
 
+or, for Unix_shell_and_environmental_modules.ipynb::
+
+https://nbviewer.org/format/slides/github/rdauria/HPC_AT_UCLA_2024OCT08/blob/master/Unix_shell_and_environmental_modules.ipynb#
