@@ -46,17 +46,17 @@ cd $HOME
 
 cd ~
 
-## let's create a unique name for our new directory based on the current time (use command `date`):
+## let's create a new directory:
 
-timestamp=$(date "+%F_%H-%M"); mkdir $HOME/$timestamp; cd $HOME/$timestamp; pwd
+mkdir HPC_AT_UCLA; cd HPC_AT_UCLA; pwd
 
 ## let's navigate back (`cd -`) and remove the new and empty directory (`rmdir`)
 
-cd - ; rmdir $HOME/$timestamp
+cd - ; rmdir HPC_AT_UCLA
 
 ## we have removed the directory so the following commands will fail:
 
-ls $HOME/$timestamp; cd $timestamp
+ls HPC_AT_UCLA; cd HPC_AT_UCLA
 
 # Getting help
 
@@ -66,6 +66,10 @@ ls --help
 
 # Shell meta-characters: \ / < > ! $ % ^ & * | { } [ ] " ' ` ~ ; 
 
+# using `date` to create a unique file name:
+
+timestamp=$(date "+%F_%H-%M")
+
 ## using `>` to redirect the output of a preceding command to a file:
 
 echo "Lorem ipsum dolor sit amet, consectetur adipiscing elit..." > myfile.$timestamp
@@ -73,7 +77,7 @@ cat myfile.$timestamp
 
 ## appending to a file (`>>`):
 
-echo $SCRATCH >> myfile.$timestamp; cat myfile.$timestamp
+echo "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." >> myfile.$timestamp; cat myfile.$timestamp
 
 ## overwriting a file (`echo text > file`):
 
