@@ -5,6 +5,10 @@
 # open a terminal (not connected to the cluster) and issue:
 curl -O https://raw.githubusercontent.com/rdauria/jupyter-notebook/main/h2jupynb
 
+# NOTE: from a Windows PowerShell you may need to use instead:
+
+curl.exe -O https://raw.githubusercontent.com/rdauria/jupyter-notebook/main/h2jupynb
+
 # start a jupyter session with:
 python h2jupynb -u <YOURHOFFMAN2ACCOUNTNAME> # you will be prompted for your H2C password twice
 
