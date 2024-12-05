@@ -2,9 +2,19 @@
 
 curl -O https://raw.githubusercontent.com/rdauria/jupyter-notebook/main/h2jupynb
 
+## Note from a Windows PowerShell you will need to use instead:
+
+curl.exe -O https://raw.githubusercontent.com/rdauria/jupyter-notebook/main/h2jupynb
+
 # assuming that you have python installed on your local computer, issue (substitute <YOURHOFFMAN2ACCOUNTNAME> w/ your H2C username):
 
 python h2jupynb -u <YOURHOFFMAN2ACCOUNTNAME> # you will be prompted for your H2C password twice
+
+# NOTE you may need to use `python3` instead of `python`
+
+python3 h2jupynb -u <YOURHOFFMAN2ACCOUNTNAME> # you will be prompted for your H2C password twice
+
+## NOTE python 3.8.x WILL NOT WORK!!! THIS VERSION OF PYTHON IS DEPRECATED 
 
 # when the jupyter session starts, open a terminal (on the jupyter interface) and issue:
 

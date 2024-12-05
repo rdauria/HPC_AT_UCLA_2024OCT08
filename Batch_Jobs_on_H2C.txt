@@ -12,6 +12,11 @@ curl.exe -O https://raw.githubusercontent.com/rdauria/jupyter-notebook/main/h2ju
 # start a jupyter session with:
 python h2jupynb -u <YOURHOFFMAN2ACCOUNTNAME> # you will be prompted for your H2C password twice
 
+# note you may need to use `python3` instead of python:
+python3 h2jupynb -u <YOURHOFFMAN2ACCOUNTNAME> # you will be prompted for your H2C password twice
+
+## NOTE python 3.8.x WILL NOT WORK!!! THIS VERSION OF PYTHON IS DEPRECATED 
+
 # when the jupyter session starts, open a terminal (on the jupyter interface) and issue:
 curl -O https://raw.githubusercontent.com/rdauria/HPC_AT_UCLA_2024OCT08/refs/heads/master/Batch_Jobs_on_H2C.ipynb
 
